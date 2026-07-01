@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cápsula interactiva sobre descubrimiento, justificación, enseñanza de la matemática e inteligencia artificial generativa.">
+  <title>Entre conjeturas y pruebas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<header class="barra" aria-label="Navegación principal">
+  <a class="marca" href="#inicio" data-ir="inicio">Epistemología e Historia de las Matemáticas</a>
+  <nav aria-label="Secciones de la cápsula">
+    <button type="button" data-ir="mapa">Mapa</button>
+    <button type="button" data-ir="actividad">Actividad</button>
+    <button type="button" data-ir="bitacora">Bitácora</button>
+    <button type="button" data-ir="fuentes">Fuentes</button>
+  </nav>
+</header>
+
+<main id="contenido">
+  <!-- =====================================================
+       PORTADA
+       ===================================================== -->
+  <section id="inicio" class="pantalla activa hero" aria-labelledby="titulo-principal">
+    <div class="hero-texto">
+      <p class="ceja">Cápsula de aprendizaje · Profesorado Universitario en Matemática · UNCo</p>
+      <h1 id="titulo-principal">Entre conjeturas y pruebas</h1>
+      <p class="bajada">Descubrimiento, justificación y responsabilidad epistemológica en la enseñanza de la matemática.</p>
+      <p>Una idea puede nacer entre ejemplos, intuiciones y errores; después necesita ser comunicada, discutida y justificada. Esta cápsula invita a interrogar qué ocurre cuando esos procesos llegan al aula y cuando una IA participa del diseño didáctico.</p>
+      <div class="acciones">
+        <button class="primario" type="button" data-ir="mapa">Comenzar</button>
+        <button class="secundario" type="button" data-ir="proposito">Conocer el propósito</button>
+      </div>
+      <div class="progreso" aria-live="polite">
+        <span>Nodos visitados:</span><strong id="contador-progreso">0 de 4</strong>
+      </div>
+    </div>
+    <figure>
+      <img src="assets/img/hero.svg" alt="Tres nodos conectan descubrir, justificar y enseñar matemática.">
+      <figcaption>La imagen propone una relación, no una secuencia rígida: explorar y justificar se retroalimentan en la enseñanza.</figcaption>
+    </figure>
+  </section>
+
+  <!-- =====================================================
+       PROPÓSITO
+       ===================================================== -->
+  <section id="proposito" class="pantalla" aria-labelledby="titulo-proposito">
+    <div class="encabezado-seccion">
+      <p class="ceja">Antes de explorar</p>
+      <h2 id="titulo-proposito">Hacer visible una tensión epistemológica</h2>
+    </div>
+    <div class="dos-columnas">
+      <div>
+        <p>La cápsula acompaña el Trabajo Práctico N.º 6. No reemplaza las lecturas: organiza problemas, contrastes y herramientas para elaborar una posición propia.</p>
+        <h3>Al finalizar, se espera que puedas</h3>
+        <ul class="lista-check">
+          <li>distinguir el contexto de descubrimiento y el contexto de justificación;</li>
+          <li>explicar por qué su separación estricta fue cuestionada;</li>
+          <li>analizar qué imagen de matemática promueve una propuesta de enseñanza;</li>
+          <li>comparar prompts generales y prompts con una perspectiva epistemológica explícita;</li>
+          <li>formular una reflexión sobre responsabilidad docente y uso de IA generativa.</li>
+        </ul>
+      </div>
+      <blockquote>¿Qué matemática enseñamos cuando mostramos únicamente los resultados ya justificados y ocultamos la búsqueda que los hizo posibles?</blockquote>
+    </div>
+    <div class="acciones">
+      <button class="primario" type="button" data-ir="mapa">Ir al mapa</button>
+      <button class="secundario" type="button" data-ir="inicio">Volver a la portada</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       MAPA NO LINEAL
+       ===================================================== -->
+  <section id="mapa" class="pantalla" aria-labelledby="titulo-mapa">
+    <div class="encabezado-seccion">
+      <p class="ceja">Navegación no lineal</p>
+      <h2 id="titulo-mapa">Cuatro entradas a un mismo problema</h2>
+      <p>Podés comenzar por cualquier nodo. Para completar el recorrido, visitá los cuatro: cada uno aporta una pieza necesaria para la actividad final.</p>
+    </div>
+    <div class="mapa-grid">
+      <button class="nodo" type="button" data-ir="nodo1">
+        <span class="numero">01</span><span class="icono" aria-hidden="true">↯</span>
+        <strong>Dos contextos</strong><small>¿Cómo surge una idea y cómo se vuelve aceptable?</small>
+        <span class="estado" data-estado="nodo1">Pendiente</span>
+      </button>
+      <button class="nodo" type="button" data-ir="nodo2">
+        <span class="numero">02</span><span class="icono" aria-hidden="true">⇄</span>
+        <strong>La frontera en disputa</strong><small>¿Puede separarse la historia de la validez?</small>
+        <span class="estado" data-estado="nodo2">Pendiente</span>
+      </button>
+      <button class="nodo" type="button" data-ir="nodo3">
+        <span class="numero">03</span><span class="icono" aria-hidden="true">◌</span>
+        <strong>El aula como espacio epistemológico</strong><small>¿Qué lugar ocupan el error y la conjetura?</small>
+        <span class="estado" data-estado="nodo3">Pendiente</span>
+      </button>
+      <button class="nodo nodo-transversal" type="button" data-ir="nodo4">
+        <span class="numero">04</span><span class="icono" aria-hidden="true">⌨</span>
+        <strong>La IA también toma posición</strong><small>¿Qué cambia cuando el prompt explicita una epistemología?</small>
+        <span class="estado" data-estado="nodo4">Pendiente</span>
+      </button>
+    </div>
+    <aside class="aviso"><strong>Recorrido sugerido:</strong> 1 → 2 → 3 → 4. El mapa permanece disponible para volver, comparar y cambiar de entrada.</aside>
+  </section>
+
+  <!-- =====================================================
+       NODO 1
+       ===================================================== -->
+  <section id="nodo1" class="pantalla nodo-seccion" data-nodo="true" aria-labelledby="titulo-nodo1">
+    <div class="encabezado-seccion">
+      <p class="ceja">Nodo 1 · Reichenbach</p>
+      <h2 id="titulo-nodo1">Dos contextos para delimitar la epistemología</h2>
+      <p class="pregunta">¿Debe la epistemología estudiar cómo se generan las ideas o solamente cómo se justifican?</p>
+    </div>
+
+    <div class="comparador-grid">
+      <article>
+        <span class="etiqueta">Contexto de descubrimiento</span>
+        <h3>Cómo aparece una idea</h3>
+        <p>Incluye intuiciones, analogías, creatividad, errores y correcciones, además de condiciones psicológicas, históricas y sociales.</p>
+        <p class="microconsigna"><strong>Palabra clave:</strong> génesis.</p>
+      </article>
+      <div class="flecha" aria-hidden="true">⇄</div>
+      <article>
+        <span class="etiqueta">Contexto de justificación</span>
+        <h3>Cómo se valida una afirmación</h3>
+        <p>Incluye demostraciones, inferencias lógicas, reglas de evidencia y criterios de aceptación o rechazo.</p>
+        <p class="microconsigna"><strong>Palabra clave:</strong> validez.</p>
+      </article>
+    </div>
+
+    <div class="recurso-grid">
+      <article class="recurso">
+        <span class="etiqueta">Audio</span>
+        <h3>Escucha orientada</h3>
+        <audio controls preload="metadata">
+          <source src="assets/audio/audio-nodo.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir el audio.
+        </audio>
+        <p class="nota-media">Mientras escuchás, registrá una diferencia y una relación entre ambos contextos.</p>
+        <details>
+          <summary>Leer la transcripción</summary>
+          <p>Reichenbach distingue dos contextos. El contexto de descubrimiento reúne intuiciones, analogías, errores, correcciones, creatividad y condiciones históricas o sociales. El contexto de justificación reúne demostraciones, inferencias, criterios de aceptación y formas racionales de validar un conocimiento. La distinción permite ordenar el análisis, pero la educación matemática abre una pregunta: ¿podemos comprender la enseñanza y el aprendizaje si dejamos fuera los procesos por los que se construyen significados?</p>
+        </details>
+      </article>
+      <article class="estrategia">
+        <span class="etiqueta">Matriz de lectura</span>
+        <h3>No confundas diferencia con aislamiento</h3>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th>Pregunta</th><th>Descubrimiento</th><th>Justificación</th></tr></thead>
+            <tbody>
+              <tr><th>¿Qué procesos incluye?</th><td contenteditable="true" aria-label="Notas sobre procesos de descubrimiento"></td><td contenteditable="true" aria-label="Notas sobre procesos de justificación"></td></tr>
+              <tr><th>¿Qué disciplina los estudiaría según Reichenbach?</th><td contenteditable="true" aria-label="Notas sobre disciplinas y descubrimiento"></td><td contenteditable="true" aria-label="Notas sobre disciplinas y justificación"></td></tr>
+              <tr><th>¿Cómo aparece en una clase?</th><td contenteditable="true" aria-label="Ejemplo de descubrimiento en clase"></td><td contenteditable="true" aria-label="Ejemplo de justificación en clase"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+
+    <figure class="imagen-ancha">
+      <img src="assets/img/esquema-conceptual.svg" alt="Esquema que conecta descubrimiento, justificación y enseñanza como una frontera en disputa.">
+      <figcaption>Esquema conceptual: la distinción es analítica; la actividad invita a discutir su alcance en educación matemática.</figcaption>
+    </figure>
+
+    <aside class="producto"><strong>Para tu escrito:</strong> explicá la diferencia con tus palabras y construí un ejemplo matemático propio para cada contexto.</aside>
+    <div class="acciones">
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="primario" type="button" data-ir="nodo2">Abrir la discusión</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       NODO 2
+       ===================================================== -->
+  <section id="nodo2" class="pantalla nodo-seccion" data-nodo="true" aria-labelledby="titulo-nodo2">
+    <div class="encabezado-seccion">
+      <p class="ceja">Nodo 2 · Críticas del siglo XX</p>
+      <h2 id="titulo-nodo2">La frontera en disputa</h2>
+      <p class="pregunta">¿Puede evaluarse una teoría sin considerar los marcos históricos, las prácticas y las rupturas que hicieron posible su producción?</p>
+    </div>
+
+    <div class="autores-grid cuatro">
+      <article><h3>Thomas Kuhn</h3><p>La actividad señala que los criterios de justificación dependen de paradigmas históricos.</p></article>
+      <article><h3>Imre Lakatos</h3><p>La historia real de la matemática muestra una interacción constante entre descubrimiento y justificación.</p></article>
+      <article><h3>Feyerabend</h3><p>Cuestiona la existencia de reglas metodológicas universales.</p></article>
+      <article><h3>Gaston Bachelard</h3><p>El conocimiento no avanza de modo continuo y acumulativo: las rupturas implican cortes con formas previas de pensamiento.</p></article>
+    </div>
+
+    <div class="video-bloque">
+      <div>
+        <span class="etiqueta">Microvideo local</span>
+        <h3>De la idea a la institucionalización</h3>
+        <p>El video no agrega una teoría nueva. Reorganiza visualmente la tensión planteada por la actividad para que puedas detenerte en cada pasaje.</p>
+        <details>
+          <summary>Preguntas para mirar</summary>
+          <ul>
+            <li>¿En qué momento aparece el error?</li>
+            <li>¿Cuándo se vuelve necesaria la demostración?</li>
+            <li>¿Qué se pierde si la clase comienza directamente por el resultado formal?</li>
+          </ul>
+        </details>
+      </div>
+      <video controls preload="metadata" poster="assets/img/video-poster.png">
+        <source src="assets/video/microvideo.mp4" type="video/mp4">
+        Tu navegador no puede reproducir el video.
+      </video>
+    </div>
+
+    <div class="tension">
+      <h3>Una tensión para argumentar</h3>
+      <div class="tension-linea">
+        <span>Reconstrucción racional</span>
+        <label for="tension-rango" class="sr-only">Ubicá tu posición entre reconstrucción racional e historia y práctica</label>
+        <input id="tension-rango" type="range" min="0" max="100" value="50">
+        <span>Historia y práctica</span>
+      </div>
+      <p>No se trata de elegir automáticamente un extremo. Escribí en la bitácora qué debería conservar una posición útil para la formación docente.</p>
+    </div>
+
+    <aside class="producto"><strong>Para tu escrito:</strong> contrastá a Reichenbach con al menos una crítica y justificá qué alcance debería tener la epistemología cuando analiza la enseñanza.</aside>
+    <div class="acciones">
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="primario" type="button" data-ir="nodo3">Llevar el problema al aula</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       NODO 3
+       ===================================================== -->
+  <section id="nodo3" class="pantalla nodo-seccion" data-nodo="true" aria-labelledby="titulo-nodo3">
+    <div class="encabezado-seccion">
+      <p class="ceja">Nodo 3 · Sierpinska y Lerman</p>
+      <h2 id="titulo-nodo3">El aula como espacio epistemológico</h2>
+      <p class="pregunta">¿Qué queda invisible cuando el aprendizaje se reduce a recibir conocimientos ya formalizados?</p>
+    </div>
+
+    <div class="tarjetas-lectura">
+      <article><h3>Construcción de significado</h3><p>Los estudiantes no acceden de manera directa al conocimiento formalizado. Construyen significados mediante ejemplos, conjeturas, discusión y negociación.</p></article>
+      <article><h3>Error y exploración</h3><p>Los procesos asociados al descubrimiento adquieren relevancia epistemológica en el ámbito educativo.</p></article>
+      <article><h3>Supuestos implícitos</h3><p>Toda práctica educativa presupone una epistemología, incluso cuando no se la enuncia.</p></article>
+    </div>
+
+    <div class="secuencia" aria-label="Secuencia didáctica para analizar">
+      <h3>Una secuencia posible, no una receta</h3>
+      <ol>
+        <li><strong>Problema:</strong> una situación que no anticipe el procedimiento.</li>
+        <li><strong>Búsqueda:</strong> ejemplos, representaciones, errores y conjeturas.</li>
+        <li><strong>Discusión:</strong> comparación de estrategias y negociación de significados.</li>
+        <li><strong>Justificación:</strong> razones, pruebas y criterios de validez.</li>
+        <li><strong>Institucionalización:</strong> organización del saber producido.</li>
+      </ol>
+      <p class="nota">Decisión de diseño: esta secuencia sintetiza procesos nombrados en la actividad. No se atribuye como modelo cerrado a un autor particular.</p>
+    </div>
+
+    <div class="dos-columnas">
+      <article class="recurso">
+        <h3>Radiografía de tu trayectoria</h3>
+        <p>Elegí una clase de matemática que recuerdes y preguntate:</p>
+        <ul>
+          <li>¿el problema ya traía indicado el procedimiento?</li>
+          <li>¿los errores se discutían o se borraban?</li>
+          <li>¿la demostración aparecía como producto de una necesidad?</li>
+          <li>¿quién validaba las respuestas?</li>
+        </ul>
+      </article>
+      <article class="recurso">
+        <h3>Riesgos y potencialidades</h3>
+        <p><strong>Solo resultados justificados:</strong> puede reforzar una matemática cerrada, acabada y ahistórica.</p>
+        <p><strong>Búsqueda sin validación:</strong> puede dejar sin resolver cómo se establecen criterios compartidos.</p>
+        <p><strong>Articulación:</strong> permite valorar la exploración sin renunciar al rigor.</p>
+      </article>
+    </div>
+
+    <aside class="producto"><strong>Para tu escrito:</strong> analizá qué contexto se privilegia en la enseñanza escolar o universitaria que conocés y explicá sus riesgos y potencialidades.</aside>
+    <div class="acciones">
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="primario" type="button" data-ir="nodo4">Explorar la dimensión de IA</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       NODO 4
+       ===================================================== -->
+  <section id="nodo4" class="pantalla nodo-seccion" data-nodo="true" aria-labelledby="titulo-nodo4">
+    <div class="encabezado-seccion">
+      <p class="ceja">Nodo 4 · Prompt, perspectiva y responsabilidad</p>
+      <h2 id="titulo-nodo4">La IA también toma posición</h2>
+      <p class="pregunta">¿Qué concepción de matemática aparece cuando pedimos una actividad “como experto” sin explicitar nuestros supuestos?</p>
+    </div>
+
+    <div class="constructor" id="laboratorio-prompts">
+      <h3>Laboratorio de prompts</h3>
+      <p>Elegí un mismo tema, nivel y contexto. Después construí dos pedidos diferentes para comparar las respuestas de una IA generativa.</p>
+      <div class="form-grid">
+        <label>Tema matemático
+          <input id="tema-prompt" type="text" placeholder="Ej.: función cuadrática">
+        </label>
+        <label>Nivel y contexto
+          <input id="contexto-prompt" type="text" placeholder="Ej.: 4.º año de escuela técnica">
+        </label>
+      </div>
+      <div class="prompt-grid">
+        <article>
+          <span class="etiqueta">Prompt A</span>
+          <h4>Rol experto general</h4>
+          <p>Solicita una actividad didáctica sin explicitar una perspectiva epistemológica.</p>
+          <textarea id="prompt-a" rows="8" aria-label="Borrador del prompt A"></textarea>
+          <button type="button" class="secundario pequeno" id="armar-prompt-a">Construir una base editable</button>
+        </article>
+        <article>
+          <span class="etiqueta">Prompt B</span>
+          <h4>Perspectiva explícita</h4>
+          <label>Perspectiva y conceptos centrales
+            <textarea id="perspectiva-prompt" rows="3" placeholder="Escribí tu posición: error, conjetura, construcción de significado, prácticas matemáticas..."></textarea>
+          </label>
+          <label>Autores con los que dialogás
+            <input id="autores-prompt" type="text" placeholder="Usá autores de las lecturas obligatorias">
+          </label>
+          <textarea id="prompt-b" rows="8" aria-label="Borrador del prompt B"></textarea>
+          <button type="button" class="secundario pequeno" id="armar-prompt-b">Construir una base editable</button>
+        </article>
+      </div>
+      <div class="acciones">
+        <button type="button" class="primario" id="guardar-prompts">Guardar borradores en este dispositivo</button>
+        <button type="button" class="secundario" id="borrar-prompts">Borrar borradores</button>
+      </div>
+      <p id="estado-prompts" class="estado-guardado" aria-live="polite"></p>
+    </div>
+
+    <div class="criterios">
+      <h3>Cuatro lentes para comparar las respuestas</h3>
+      <label><input type="checkbox"> Tipo de tareas propuestas.</label>
+      <label><input type="checkbox"> Rol del estudiante y del docente.</label>
+      <label><input type="checkbox"> Lugar del error, la exploración y la justificación.</label>
+      <label><input type="checkbox"> Concepción de matemática que subyace.</label>
+    </div>
+
+    <aside class="producto"><strong>Producto de integración:</strong> compará ambas respuestas y analizá si explicitar la perspectiva modificó la propuesta, la volvió más coherente con tus supuestos y qué muestra esto sobre la responsabilidad epistemológica docente.</aside>
+    <div class="acciones">
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="primario" type="button" data-ir="actividad">Resolver los casos</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ACTIVIDAD INTERACTIVA
+       ===================================================== -->
+  <section id="actividad" class="pantalla" aria-labelledby="titulo-actividad">
+    <div class="encabezado-seccion">
+      <p class="ceja">Actividad interactiva</p>
+      <h2 id="titulo-actividad">¿Descubrimiento, justificación o articulación?</h2>
+      <p>Leé cada situación y elegí la interpretación que mejor recupera los problemas de la actividad. La devolución explica el encuadre; no reemplaza tu argumentación.</p>
+    </div>
+    <div id="caso-contenedor" class="caso" aria-live="polite"></div>
+    <div class="acciones">
+      <button class="secundario" type="button" id="reiniciar-actividad">Reiniciar casos</button>
+      <button class="primario" type="button" data-ir="bitacora">Pasar a la bitácora</button>
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       BITÁCORA
+       ===================================================== -->
+  <section id="bitacora" class="pantalla" aria-labelledby="titulo-bitacora">
+    <div class="encabezado-seccion">
+      <p class="ceja">Escritura personal</p>
+      <h2 id="titulo-bitacora">Bitácora de posición epistemológica</h2>
+      <p>Las notas se guardan únicamente en este navegador y en este dispositivo. No se envían a ningún servidor.</p>
+    </div>
+    <label for="nota-bitacora"><strong>¿Con qué perspectiva te sentís más cercano y qué consecuencias tendría para tus clases?</strong></label>
+    <textarea id="nota-bitacora" rows="12" placeholder="Podés articular autores, ideas centrales, críticas a otras posiciones, un ejemplo de aula y una pregunta todavía abierta..."></textarea>
+    <div class="acciones">
+      <button class="primario" type="button" id="guardar-bitacora">Guardar en este dispositivo</button>
+      <button class="secundario" type="button" id="borrar-bitacora">Borrar</button>
+      <button class="secundario" type="button" data-ir="pausa">Hacer una pausa</button>
+    </div>
+    <p id="estado-guardado" class="estado-guardado" aria-live="polite"></p>
+  </section>
+
+  <!-- =====================================================
+       PAUSA MUSICAL
+       ===================================================== -->
+  <section id="pausa" class="pantalla" aria-labelledby="titulo-pausa">
+    <div class="encabezado-seccion">
+      <p class="ceja">Pausa reflexiva</p>
+      <h2 id="titulo-pausa">Escuchar para volver a preguntar</h2>
+    </div>
+    <article class="pausa-card">
+      <audio controls loop preload="metadata">
+        <source src="assets/audio/pausa-reflexiva.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir el audio.
+      </audio>
+      <blockquote id="pregunta-pausa">¿Qué parte de una clase de matemática suele quedar fuera cuando solo observamos el resultado final?</blockquote>
+      <button type="button" class="secundario" id="otra-pregunta">Otra pregunta</button>
+    </article>
+    <div class="acciones">
+      <button class="primario" type="button" data-ir="fuentes">Revisar fuentes y créditos</button>
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       BIBLIOGRAFÍA Y CRÉDITOS
+       ===================================================== -->
+  <section id="fuentes" class="pantalla" aria-labelledby="titulo-fuentes">
+    <div class="encabezado-seccion">
+      <p class="ceja">Bibliografía y créditos</p>
+      <h2 id="titulo-fuentes">Textos que sostienen el recorrido</h2>
+    </div>
+    <div class="fuentes-grid">
+      <article><h3>Bibliografía indicada</h3><ul><li>Duarte, B., Lamela, C. y Maderna, F. (2018). <em>Investigaciones sobre enseñanza de la matemática en educación secundaria</em>.</li><li>Gascón, J. y Nicolás, P. (2017a). <em>Can didactics say how to teach? Complete answers...</em></li><li>Gascón, J. y Nicolás, P. (2017b). <em>Can didactics say how to teach? The beginning of a dialogue...</em></li><li>Sierpinska, A. y Lerman, S. (1996). <em>Epistemologies of mathematics and of mathematics education</em>.</li></ul></article>
+      <article><h3>Autores del problema inicial</h3><p>La actividad recupera la distinción de Hans Reichenbach y las críticas asociadas a Thomas Kuhn, Imre Lakatos, Feyerabend y Gaston Bachelard.</p><p>El trabajo se elaboró sobre la base del trabajo de Maximiliano Seguel (2025), según se declara en el documento proporcionado.</p></article>
+      <article><h3>Autoría y uso de IA</h3><p><strong>Responsable docente:</strong> Lucas Colipe.</p><p>La organización didáctica, el código, las ilustraciones, las narraciones automatizadas y el microvideo fueron producidos con asistencia de inteligencia artificial generativa y revisados para mantener fidelidad al material proporcionado.</p><p>La IA no sustituye la lectura de la bibliografía ni la elaboración argumentada de los estudiantes.</p></article>
+    </div>
+    <aside class="creditos"><strong>Recursos locales:</strong> la cápsula no depende de frameworks, fuentes web ni servicios externos. El audio, el video, la imagen y la música están incluidos en la carpeta <code>assets/</code>.</aside>
+    <div class="acciones">
+      <button class="primario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="secundario" type="button" data-ir="inicio">Volver a la portada</button>
+    </div>
+  </section>
+</main>
+
+<noscript><p class="noscript">Esta cápsula necesita JavaScript para la navegación por pantallas, la actividad y el guardado local de la bitácora.</p></noscript>
+<footer><p>Epistemología e Historia de las Matemáticas · Profesorado Universitario en Matemática · 2026</p></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
