@@ -10,13 +10,13 @@
   <text x="78" y="155" class="title">ENTRE</text><text x="78" y="235" class="title">CONJETURAS</text><text x="78" y="315" class="title">Y PRUEBAS</text>
   <text x="82" y="405" class="small">explorar · justificar · enseñar</text>
   <path d="M175 555 C310 500, 420 650, 555 570 S750 470, 790 575" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 13"/>
-  <circle cx="175" cy="550" r="74" class="node"/>
+  <circle cx="175" cy="550" r="79" class="node"/>
   <text x="175" y="535" text-anchor="middle" class="label">DESCUBRIR</text>
-  <text x="175" y="562" text-anchor="middle" class="sub">intuición · búsqueda</text>
-  <circle cx="475" cy="605" r="74" class="node"/>
+  <text x="175" y="563" text-anchor="middle" class="sub">intuición · búsqueda</text>
+  <circle cx="475" cy="605" r="79" class="node"/>
   <text x="475" y="600" text-anchor="middle" class="label">JUSTIFICAR</text>
   <text x="475" y="628" text-anchor="middle" class="sub">prueba · validez</text>
-  <circle cx="760" cy="555" r="74" class="node"/>
-  <text x="760" y="550" text-anchor="middle" class="label">ENSEÑAR</text>
-  <text x="760" y="578" text-anchor="middle" class="sub">significado · diálogo</text>
+  <circle cx="760" cy="555" r="79" class="node"/>
+  <text x="760" y="545" text-anchor="middle" class="label">ENSEÑAR</text>
+  <text x="760" y="573" text-anchor="middle" class="sub">significado · diálogo</text>
 </svg>
